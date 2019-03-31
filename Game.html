@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Game KatBae</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="game.css">
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="Jeu.js"></script>
+</head>
+<body>
+	<header>
+		<h1>CAL JACK</h1>
+	</header>
+
+	<div>
+		<p id="date" class="row justify-content-center"></p>
+		<p id="chrono" class="row justify-content-center"></p>
+	</div>
+
+	<article class="container">
+	
+		<h3 class ="row justify-content-center">Les cartes de la banque</h3>
+		<img id='image' src="images/coeur/dame.jpg" alt="">
+		<canvas id="boiteBanque" width="250" height="250" style="border:2px solid #000;"></canvas>
+		
+		<h3 class ="row justify-content-center">Vos cartes</h3>
+		<canvas id="boiteMesCartes" width="250" height="250" style="border:2px solid #000;"></canvas>
+		
+	</article>
+
+	<footer>
+		<button type="button" id="newCarte" class="btn btn-info">Je
+			veux une carte</button>
+		<button type="button" id="arrete" class="btn btn-warning">J'arrete</button>
+		<button type="button" id="rejouer" class="btn btn-success">Rejouer</button>
+	</footer>
+
+
+
+</body>
+</html>

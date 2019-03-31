@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulaire KatBae</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="style.css">
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<header>
+		<h1>CAL JACK</h1>
+	</header>
+
+	<form action="Game.html" method="post" >
+		<div>
+			<label for="username">Code utilisateur</label> <input type="text"
+				id="username" name="username" placeholder="Entre 5 et 10 [A-Za-z] "
+				minlength="5" maxlength="10"
+				title="Entrez entre 5 et 10 caracteres alphabetiques" required>
+		</div>
+
+		<div>
+			<label for="pass">Mot de passe</label> <input type="password"
+				id="pass" name="password" placeholder="Exactement 8 chiffres"
+				minlength="8" maxlength="8" title="Entrez exactement 8 chiffres" required>
+		</div>
+
+		
+		<div>
+			<img src="images/carreau/carreau.jpg" alt="" class="input"> <input
+				type="radio" name="carte">
+		</div>
+		<div>
+			<img src="images/coeur/coeur.jpg" alt="" class="input"> <input
+				type="radio" checked name="carte">
+		</div>
+		<div>
+			<img src="images/pique/pique.jpg" alt="" class="input"> <input
+				type="radio" name="carte">
+		</div>
+		<div>
+			<img src="images/trefle/trefle.jpg" alt="" class="input"> <input
+				type="radio" name="carte">
+		</div>
+		<input type="submit" value="Se connecter">
+	</form>
+
+	<script src="Tp2.js"></script>
+</body>
+</html>
