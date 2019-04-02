@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
 <title>Formulaire KatBae</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
@@ -23,38 +23,38 @@
 		<h1>CAL JACK</h1>
 	</header>
 
-	<form action="Game.html" method="post" >
+	<form action="Game.html" method="get" >
 		<div>
 			<label for="username">Code utilisateur</label> <input type="text"
 				id="username" name="username" placeholder="Entre 5 et 10 [A-Za-z] "
-				minlength="5" maxlength="10"
-				title="Entrez entre 5 et 10 caracteres alphabetiques" required>
+				pattern="[a-zA-Z0-9]{5,10}"
+				title="Entrez entre 5 et 10 caracteres alphanumeriques" required>
 		</div>
 
 		<div>
 			<label for="pass">Mot de passe</label> <input type="password"
 				id="pass" name="password" placeholder="Exactement 8 chiffres"
-				minlength="8" maxlength="8" title="Entrez exactement 8 chiffres" required>
+				pattern="[0-9]{8}" title="Entrez exactement 8 chiffres" required>
 		</div>
 
 		
 		<div>
 			<img src="images/carreau/carreau.jpg" alt="" class="input"> <input
-				type="radio" name="carte">
+				type="radio" name="carte" value="carreau">
 		</div>
 		<div>
 			<img src="images/coeur/coeur.jpg" alt="" class="input"> <input
-				type="radio" checked name="carte">
+				type="radio" checked name="carte" value="coeur">
 		</div>
 		<div>
 			<img src="images/pique/pique.jpg" alt="" class="input"> <input
-				type="radio" name="carte">
+				type="radio" name="carte" value="pique">
 		</div>
 		<div>
 			<img src="images/trefle/trefle.jpg" alt="" class="input"> <input
-				type="radio" name="carte">
+				type="radio" name="carte" value="trefle">
 		</div>
-		<input type="submit" value="Se connecter">
+		<input type="submit" id="seConn" value="Se connecter">
 	</form>
 
 	<script src="Tp2.js"></script>

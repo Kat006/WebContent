@@ -56,6 +56,8 @@ function main() {
 		
 		contexteMes.drawImage(image,45,20,165,220);
 
+		var couleurCarte = (window.location.href).substr((window.location.href).lastIndexOf("=")+1);
+		console.log(couleurCarte);
 	var arreter = document.getElementById("arrete");
 	arreter.onclick = function clear() {
 		clearInterval(interval);
@@ -70,6 +72,8 @@ function main() {
 	function newCarte() {
 
 	}
+	
+	
 
 }
 
