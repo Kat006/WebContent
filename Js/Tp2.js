@@ -51,7 +51,7 @@ function main() {
 		if(window.localStorage){
 			var couleur = document.forms["formulaire"]["carte"];
 			localStorage.setItem("Couleur choisie", couleur.value);
-			var username = document.forms["formulaire"]["username"];
+			var usernname = document.forms["formulaire"]["username"];
 			localStorage.setItem("Nom d'utilisateur", username.value);
 			var pass = document.forms["formulaire"]["password"];
 			localStorage.setItem("Mot de pass", pass.value);

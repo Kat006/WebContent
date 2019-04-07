@@ -61,7 +61,7 @@ function main() {
 	function Cartes(cle, valeur) {
 		this.cle = cle;
 		this.image = new Image();
-		this.image.src = "images/" + couleurCarte + "/" + cle;
+		this.image.src = "../images/" + couleurCarte + "/" + cle;
 		this.image.alt = couleurCarte + cle;
 		document.body.appendChild(this.image);
 		this.valeur = valeur;
@@ -127,16 +127,16 @@ function main() {
 					if (userBanque.points > utilisateur.points
 							&& userBanque <= 21) {
 						alert("La banque a gagne avec " + userBanque.points
-								+ "points!")
+								+ "points!");
 					} else if (userBanque.points > 21
 							&& utilisateur.points > 21) {
-						alert("Match null!")
+						alert("Match null!");
 					} else
 						alert("Vous avez gagne avec " + utilisateur.points
-								+ "points!")
+								+ "points!");
 				}, 150);
 
-	}
+	};
 
 	var rejouer = document.getElementById("rejouer");
 	rejouer.onclick = function recetTimer() {
@@ -148,7 +148,7 @@ function main() {
 		utilisateur.tableauDeCartes = [];
 		CartesBanque();
 		MaCarte();
-	}
+	};
 
 	var newCarte = document.getElementById("newCarte");
 	newCarte.addEventListener("click", function() {
