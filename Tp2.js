@@ -47,6 +47,17 @@ function main() {
 		} else {
 			document.getElementById('username').style.borderColor = "green";
 		}
+		
+		if(window.localStorage){
+			var couleur = document.forms["formulaire"]["carte"];
+			localStorage.setItem("Couleur choisie", couleur.value);
+			var username = document.forms["formulaire"]["username"];
+			localStorage.setItem("Nom d'utilisateur", username.value);
+			var pass = document.forms["formulaire"]["password"];
+			localStorage.setItem("Mot de pass", pass.value);
+		}else{
+			alert("Votre browser ne supporte pas local Storage");
+		}
 	});
 	
 
